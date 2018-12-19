@@ -1,0 +1,4 @@
+baseURL = "https://eskio.net/"
+languageCode = "fr-fr"
+title = "Eskio"
+theme = "blank"
