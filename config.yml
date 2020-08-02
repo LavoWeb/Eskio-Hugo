@@ -15,3 +15,10 @@ params:
         - Sur mesure
         - Multi-AZ
         - APM
+    menu:
+        -
+            url: "#pricing"
+            name: Nos prix
+        -
+            url: faq/
+            name: FAQ
