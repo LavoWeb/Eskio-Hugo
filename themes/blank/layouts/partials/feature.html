@@ -1,0 +1,21 @@
+<div class="py-12 bg-white">
+    <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+            {{ range .Site.Params.Feature }}
+            <div class="mt-10 lg:mt-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <div class="mt-5">
+                    <h5 class="text-lg leading-6 font-medium text-gray-900"> {{ .title }}</h5>
+                    <p class="mt-2 text-base leading-6 text-gray-500">
+                        {{ .description }}
+                    </p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
