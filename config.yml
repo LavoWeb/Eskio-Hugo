@@ -1,0 +1,17 @@
+baseURL: "https://eskio.net/"
+languageCode: "fr-fr"
+title: "Eskio"
+theme: "blank"
+params:
+    starter:
+        - Monitoring avec astreinte 24h/24, 7j/7
+        - Intervention comprise
+        - Accès FTP
+    pro:
+        - Accès SSH
+        - Autoscalling horizontal
+        - Scalling vertical pendant les opérations promos
+    dedicated:
+        - Sur mesure
+        - Multi-AZ
+        - APM

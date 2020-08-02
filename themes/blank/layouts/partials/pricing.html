@@ -1,4 +1,4 @@
-<div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+<div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28" id="pricing">
     <div class="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
         <div class="text-center">
             <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
@@ -41,18 +41,7 @@
                                 </div>
                                 <div class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                     <ul>
-                                        <li class="flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none"
-                                                     viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Pariatur quod similique
-                                            </p>
-                                        </li>
+                                        {{ range .Site.Params.Starter }}
                                         <li class="mt-4 flex items-start">
                                             <div class="flex-shrink-0">
                                                 <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none"
@@ -62,28 +51,17 @@
                                                 </svg>
                                             </div>
                                             <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Sapiente libero doloribus
+                                                {{ . }}
                                             </p>
                                         </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none"
-                                                     viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Vel ipsa esse repudiandae
-                                            </p>
-                                        </li>
+                                        {{ end }}
                                     </ul>
                                     <div class="mt-8">
                                         <div class="rounded-lg shadow-md">
-                                            <a href="#"
+                                            <a href="{{ .Site.BaseURL }}contact/"
                                                class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
                                                aria-describedby="tier-hobby">
-                                                Start your trial
+                                                Nous contacter
                                             </a>
                                         </div>
                                     </div>
@@ -97,7 +75,7 @@
                             <div class="absolute inset-x-0 top-0 transform translate-y-px">
                                 <div class="flex justify-center transform -translate-y-1/2">
 <span class="inline-flex rounded-full bg-indigo-600 px-4 py-1 text-sm leading-5 font-semibold tracking-wider uppercase text-white">
-Most popular
+Nous recommandons
 </span>
                                 </div>
                             </div>
@@ -124,73 +102,27 @@ Most popular
                             </div>
                             <div class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
                                 <ul>
-                                    <li class="flex items-start">
-                                        <div class="flex-shrink-0">
-                                            <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M5 13l4 4L19 7"/>
-                                            </svg>
-                                        </div>
-                                        <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                            Quia rem est sed impedit magnam
-                                        </p>
-                                    </li>
+                                    {{ range .Site.Params.Pro }}
                                     <li class="mt-4 flex items-start">
                                         <div class="flex-shrink-0">
-                                            <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M5 13l4 4L19 7"/>
+                                            <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none"
+                                                 viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
                                             </svg>
                                         </div>
                                         <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                            Dolorem vero ratione voluptates
+                                            {{ . }}
                                         </p>
                                     </li>
-                                    <li class="mt-4 flex items-start">
-                                        <div class="flex-shrink-0">
-                                            <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M5 13l4 4L19 7"/>
-                                            </svg>
-                                        </div>
-                                        <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                            Qui sed ab doloribus voluptatem dolore
-                                        </p>
-                                    </li>
-                                    <li class="mt-4 flex items-start">
-                                        <div class="flex-shrink-0">
-                                            <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M5 13l4 4L19 7"/>
-                                            </svg>
-                                        </div>
-                                        <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                            Laborum commodi molestiae id et fugiat
-                                        </p>
-                                    </li>
-                                    <li class="mt-4 flex items-start">
-                                        <div class="flex-shrink-0">
-                                            <svg class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M5 13l4 4L19 7"/>
-                                            </svg>
-                                        </div>
-                                        <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                            Nam ut ipsa nesciunt culpa modi dolor
-                                        </p>
-                                    </li>
+                                    {{ end }}
                                 </ul>
                                 <div class="mt-10">
                                     <div class="rounded-lg shadow-md">
-                                        <a href="#"
+                                        <a href="{{ .Site.BaseURL }}contact/"
                                            class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150"
                                            aria-describedby="tier-growth">
-                                            Start your trial
+                                            Nous contacter
                                         </a>
                                     </div>
                                 </div>
@@ -223,18 +155,7 @@ Most popular
                                 </div>
                                 <div class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                     <ul>
-                                        <li class="flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none"
-                                                     viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Pariatur quod similique
-                                            </p>
-                                        </li>
+                                        {{ range .Site.Params.Dedicated }}
                                         <li class="mt-4 flex items-start">
                                             <div class="flex-shrink-0">
                                                 <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none"
@@ -244,28 +165,17 @@ Most popular
                                                 </svg>
                                             </div>
                                             <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Sapiente libero doloribus
+                                                {{ . }}
                                             </p>
                                         </li>
-                                        <li class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
-                                                <svg class="h-6 w-6 text-green-500" stroke="currentColor" fill="none"
-                                                     viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                </svg>
-                                            </div>
-                                            <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                                Vel ipsa esse repudiandae
-                                            </p>
-                                        </li>
+                                        {{ end }}
                                     </ul>
                                     <div class="mt-8">
                                         <div class="rounded-lg shadow-md">
-                                            <a href="#"
+                                            <a href="{{ .Site.BaseURL }}contact/"
                                                class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
                                                aria-describedby="tier-scale">
-                                                Start your trial
+                                                Nous contacter
                                             </a>
                                         </div>
                                     </div>
