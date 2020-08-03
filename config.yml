@@ -1,0 +1,52 @@
+baseURL: "https://eskio.net/"
+languageCode: "fr-fr"
+title: "Eskio"
+theme: "blank"
+params:
+    starter:
+        - Monitoring avec astreinte 24h/24, 7j/7
+        - Intervention comprise
+        - Accès FTP
+    pro:
+        - Accès SSH
+        - Autoscalling horizontal
+        - Scalling vertical pendant les opérations promos
+    dedicated:
+        - Sur mesure
+        - Multi-AZ
+        - APM
+    menu:
+        -
+            url: "#pricing"
+            name: Nos prix
+        -
+            url: faq/
+            name: FAQ
+    feature:
+        -
+            title: "Hébergement cloud"
+            description: "L'hébergement sur un cloud public permets de réduire vos coûts en adaptant facilement les ressources disponibles."
+        -
+            title: "Infogérance professionnelle"
+            description: "Votre site à un problème vendredi soir ? Pas de problème, on s'en occupe, ça n'attendra pas le lundi."
+        -
+            title: "Expert Magento"
+            description: "Nous travaillions exclusivement sous Magento, notre configuration est optimisée."
+        -
+            title: "Monitoring 24/7"
+            description: "Triple monitoring pour connaitre la santé du site web."
+        -
+            title: "Varnish"
+            description: "Système de cache complet."
+        -
+            title: "Redis"
+            description: "Base de données NoSQL ultra rapide."
+        -
+            title: "Aurora MySQL"
+            description: "Les performances et la disponibilité des bases de données commerciales."
+        -
+            title: "Elastic Search"
+            description: "Moteur de recherche puissant."
+        -
+            title: "APM"
+            description: "Un problème de performance ? Nous pouvons activer un APM sur demande pour trouver les fuites."

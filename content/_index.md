@@ -1,10 +1,10 @@
-+++
-date = "2018-10-08-7"
-title = "Hébergement Magento | Eskio"
-h1 = "Hébergement Magento"
-description = "Vous cherchez un expert en hébergement Magento disponible qui connait vos problématiques ? Demandez un devis."
-draft = false
-+++
+---
+date: "2018-10-08-7"
+title: "Hébergement Magento | Eskio"
+h1: "Hébergement Magento"
+description: "Vous cherchez un expert en hébergement Magento disponible qui connait vos problématiques ? Demandez un devis."
+draft: false
+---
 
 Nous proposons à nos clients des technologies de pointe en hébergement. Nos points-fort :
 
