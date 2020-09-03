@@ -17,6 +17,9 @@ params:
         - APM
     menu:
         -
+            url: magento-cloud/
+            name: Magento Cloud
+        -
             url: "#pricing"
             name: Nos prix
         -
