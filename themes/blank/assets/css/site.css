@@ -1,0 +1,8 @@
+.menu-container {
+  display: none;
+  transition-duration: 200ms;
+}
+
+.menu-container.active {
+  display: block;
+}
