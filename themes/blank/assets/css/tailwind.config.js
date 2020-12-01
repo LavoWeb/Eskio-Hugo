@@ -1,7 +1,16 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+      scale: {
+        '500': '5',
+      }
+    }
   },
-  variants: {},
+  variants: {
+    extend: {
+      scale: ['group-hover'],
+      translate: ['group-hover']
+    }
+  },
   plugins: []
 }
