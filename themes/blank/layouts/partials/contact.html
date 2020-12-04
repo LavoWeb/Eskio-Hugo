@@ -29,40 +29,42 @@
             <form action="#" method="POST" class="grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
                 <input type="hidden" name="_subject" value="Contact Eskio">
                 <input type="hidden" name="_next" value="{{ .Site.BaseURL }}post/merci/">
-                <div>
+                <div class="mb-4">
                     <label for="first_name" class="block text-sm font-medium leading-5 text-gray-700">Prénom</label>
                     <div class="mt-1 relative rounded-md shadow-sm">
-                        <input id="first_name" name="first_name" class="form-input py-3 px-4 block w-full transition ease-in-out duration-150">
+                        <input id="first_name" name="first_name" class="border-gray-300 border py-3 px-4 block w-full transition ease-in-out duration-150">
                     </div>
                 </div>
-                <div>
+                <div class="mb-4">
                     <label for="last_name" class="block text-sm font-medium leading-5 text-gray-700">Nom</label>
                     <div class="mt-1 relative rounded-md shadow-sm">
-                        <input id="last_name" name="last_name" class="form-input py-3 px-4 block w-full transition ease-in-out duration-150">
+                        <input id="last_name" name="last_name" class="border-gray-300 border py-3 px-4 block w-full transition ease-in-out duration-150">
                     </div>
                 </div>
-                <div class="sm:col-span-2">
+                <div class="mb-4 sm:col-span-2">
                     <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email</label>
                     <div class="mt-1 relative rounded-md shadow-sm">
-                        <input id="email" name="email" type="email" class="form-input py-3 px-4 block w-full transition ease-in-out duration-150">
+                        <input id="email" name="email" type="email" class="border-gray-300 border py-3 px-4 block w-full transition ease-in-out duration-150">
                     </div>
                 </div>
-                <div class="sm:col-span-2">
+                <div class="mb-4 sm:col-span-2">
                     <label for="phone_number" class="block text-sm font-medium leading-5 text-gray-700">Numéro de téléphone</label>
                     <div class="mt-1 relative rounded-md shadow-sm">
-                        <input id="phone_number" name="phone_number" type="tel" class="form-input py-3 px-4 block w-full transition ease-in-out duration-150">
+                        <input id="phone_number" name="phone_number" type="tel" class="border-gray-300 border py-3 px-4 block w-full transition ease-in-out duration-150">
                     </div>
                 </div>
-                <div class="sm:col-span-2">
+                <div class="mb-4 sm:col-span-2">
                     <label for="message" class="block text-sm font-medium leading-5 text-gray-700">Message</label>
                     <div class="mt-1 relative rounded-md shadow-sm">
-                        <textarea id="message" name="message" rows="4" class="form-textarea py-3 px-4 block w-full transition ease-in-out duration-150"></textarea>
+                        <textarea id="message" name="message" rows="4" class="border-gray-300 border py-3 px-4 block w-full transition ease-in-out duration-150"></textarea>
                     </div>
                 </div>
                 <div class="sm:col-span-2">
                   <span class="w-full inline-flex rounded-md shadow-sm">
-                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
-                      C'est partit !
+                    <button type="submit" class="group w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+                        C'est parti !
+                        <span class="absolute right-0 mr-8 inline-block transition-all ease-in duration-1000 transform group-hover:-translate-y-64 group-hover:translate-x-64 group-hover:opacity-0 group-hover:scale-500">🚀</span>
+		                <span class="absolute right-0 mr-8 inline-block animate-bounce transition-all ease-in-out duration-500 opacity-0 group-hover:opacity-100">👇️</span>
                     </button>
                   </span>
                 </div>
