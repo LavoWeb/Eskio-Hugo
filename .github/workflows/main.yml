@@ -12,17 +12,17 @@ jobs:
         with:
           hugo-version: "0.74.2"
 
-      - name: Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: NPM install
-        run: npm install
-
-      - name: Compil css
-        run: node node_modules/postcss-cli/bin/postcss themes/blank/assets/css/styles.css -o themes/blank/static/css/styles.css
+#      - name: Node
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: '14'
+#          registry-url: 'https://registry.npmjs.org'
+#
+#      - name: NPM install
+#        run: npm install
+#
+#      - name: Compil css
+#        run: node node_modules/postcss-cli/bin/postcss themes/blank/assets/css/styles.css -o themes/blank/static/css/styles.css
 
       - name: Build FR
         run: |
