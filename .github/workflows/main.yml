@@ -13,15 +13,13 @@ jobs:
           hugo-version: "0.74.2"
 
       - name: NPM install
-        working-directory: ./themes/blank/
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Compil css
-        working-directory: ./themes/blank/
-        run: node node_modules/postcss-cli/bin/postcss assets/css/styles.css -o static/css/styles.css
+        run: node node_modules/postcss-cli/bin/postcss themes/blank/assets/css/styles.css -o themes/blank/static/css/styles.css
 
       - name: Build FR
         run: |
