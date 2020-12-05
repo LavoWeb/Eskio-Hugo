@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Compil css
-        run: node node_modules/postcss-cli/bin/postcss themes/blank/assets/css/styles.css -o themes/blank/static/css/styles.css
+        run: postcss themes/blank/assets/css/styles.css -o themes/blank/static/css/styles.css
 
       - name: Build FR
         run: |
