@@ -26,6 +26,7 @@ jobs:
 
       - name: Build FR
         run: |
+         npm ci
          hugo --minify
          echo "eskio.net" > public/CNAME
 
